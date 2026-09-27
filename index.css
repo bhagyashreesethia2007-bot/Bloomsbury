@@ -1,0 +1,424 @@
+
+
+*{
+     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color:#d6be9c;
+    color:#472818;
+}
+
+
+
+header{
+    background-color:#eae0d3;
+    border-bottom:2px solid #d8c5b2;
+}
+
+nav{
+    width:80%;
+    margin:auto;
+    padding:18px ;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.Logo{
+    color:#60351c;
+    font-size:45px;
+    font-style:italic;
+    letter-spacing:2px;
+    }
+
+.links{
+    display:flex;
+    gap:20px;
+}
+
+.links a{
+    color:#543d2c;
+    font-size:15px;
+}
+
+.links a:hover{
+    color:#543d2c;
+}
+
+
+.Hero{
+    width:78%;
+    margin:auto;
+    padding:70px ;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.Hero-text{
+    width:50%;
+}
+
+
+.Hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.Hero h1 b{
+    color:#4b2e1e !important;
+}
+
+.Hero-text p{
+    color:#a45f32;
+    font-size:15px;
+    margin-bottom:25px;
+}
+.Hero-books{
+    width:40%;
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    
+}
+
+.Hero-books img{
+    width:120px;
+    height:200px;
+    border-radius:5px;
+    box-shadow:0 5px 15px #c1ac9b;
+}
+
+.Hero-books img:hover{
+    transform:scale(1.06);
+}
+
+.button {
+    display:inline-block;
+     background-color:#704225;
+    color: rgb(248, 242, 242);
+      padding:12px 22px;
+    border-radius:6px;
+}
+
+.button:hover{
+    background-color:#a85f2f;
+}
+
+.About{
+    background-color:#eddcc8;
+    padding:68px 15%;
+    text-align:center;
+}
+
+.About h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.About p{
+    color:#705946;
+    margin:15px auto;
+    max-width:845px;
+}
+
+.Pillar{
+    position: static;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.categories{
+    width:85%;
+    margin:auto;
+    padding:70px;
+}
+
+.categories h2{
+    font-size:35px;
+    margin-bottom:70px;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
+
+.category{
+    background-color:#fffaf3;
+    color:#4b2e1e;
+    padding:25px;
+    border:2px solid #ddcbbb;
+    border-radius:5px;
+    }
+
+.category h3{
+    font-size:23px;
+    margin:10px;
+}
+
+.category p{
+    color:#765b45;
+}
+
+.category:hover{
+    background-color:#704225;
+    color: white;
+}
+
+.books{
+    width:100%;
+    margin:0;
+    padding:20px 0px;
+}
+
+.books .Title{
+    margin:0 0 28px 0;
+    }
+    
+.Title{
+    color:#543d2c !important ;
+    font-size:15px;
+     margin:0 0 10px 0;
+   
+}
+
+
+.books h2{
+   font-size:38px;
+    margin:0px;
+}
+
+.section-text{
+    color:#765b45;
+    margin-top:10px;
+}
+
+
+.category-heading{
+    margin-top:50px;
+    margin-bottom:20px;
+    border-left:4px solid #a96030;
+    padding-left:15px;
+}
+
+.category-heading h3{
+    font-size:25px;
+}
+
+.category-heading p{
+    color:#765b45;
+}
+
+
+.book-container{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+}
+
+
+.book-card{
+    background-color:#fffaf3;
+    display:flex;
+    border:1px solid #ddcbbb;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.book-card:hover{
+    box-shadow:0 5px 20px #c2b09d;
+}
+
+
+.book-card img{
+    width:160px;
+    height:270px;  
+}
+
+
+.book-info{
+    padding:20px;
+}
+
+.book-info h3{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.author{
+    color:#a45f32;
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+.book-info p{
+    color:#765b45;
+    font-size:14px;
+}
+
+
+.price{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.price h4{
+    font-size:20px;
+}
+
+
+.price button{
+    background-color:#704225;
+    color:white;
+    border:none;
+    padding:9px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.price button:hover{
+    background-color:#a45f32;
+}
+
+
+.Contact{
+    background-color:#eadccb;
+    padding:70px 15%;
+    text-align:center;
+}
+
+.Contact h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.Contact > p{
+    color:#765b45;
+    margin-bottom:30px;
+}
+
+
+.Contact form{
+    background-color:#fffaf3;
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    text-align:left;
+    border:2px solid #ddcbbb;
+}
+
+.Contact label{
+    color:#4b2e1e;  
+}
+
+
+.Contact textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #cdb9a6;
+    font-family:Georgia, sans-serif;
+    height:100px;
+}
+
+
+
+.Contact form button{
+    background-color:#704225;
+    color:white;
+    padding:12px 22px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.Contact form button:hover{
+    background-color:#a45f32;
+
+}
+
+ @media (max-width:800px){ 
+       
+           .Hero{ 
+                flex-direction:column;
+                text-align:center; } 
+            
+             .Hero-text{ width:100%; } 
+                        
+             .Hero-books{ 
+                width:100%;
+                 margin-top:40px; } 
+                             
+            .category-container{ grid-template-columns:1fr 1fr; } 
+            
+            .book-container{ grid-template-columns:1fr; }
+                              
+              footer{ grid-template-columns:1fr 1fr; }
+            
+            }
+                              
+                             
+ @media (max-width:600px){ 
+                                
+                               
+             nav{ flex-direction:column; 
+                gap:15px; }
+                                     
+                 .links{ flex-wrap:wrap;
+                                
+                        justify-content:center; } 
+                                         
+                                         
+                .Hero h1{ font-size:45px; }
+                
+                .Hero-books img{ width:100px;
+                                 height:150px; }
+                                            
+                  .category-container{ grid-template-columns:1fr; }
+                                            
+                 .book-card{ flex-direction:column; } 
+                                            
+                 .book-card img{ width:100%;
+                                 height:300px; } 
+                                 
+                footer{ grid-template-columns:1fr; } 
+                 
+            }
+
+footer{
+     background-color:#3b271c;
+     color:white; 
+     padding:50px 5%;
+     display:grid;
+     grid-template-columns:2fr 1fr 1fr 1fr;
+     gap:30px; }
+        
+       
+ footer h2{ margin-bottom:15px; } 
+        
+footer h3{ color:#d9a77e;
+             margin-bottom:15px; }
+
+footer p{ color:#d4c2b2;
+         margin-bottom:5px; }
+        
+ footer a{ display:block; 
+             color:#d4c2b2; 
+             margin-bottom:5px; }
+
+footer a:hover{ color:white; } 
+             
+.Copyright{      
+                background-color:#291b13;
+                 color:#cdbbaa; 
+                 text-align:center;
+                  padding:15px; }
